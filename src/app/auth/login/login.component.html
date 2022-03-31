@@ -1,0 +1,44 @@
+<!-- <section class="section">
+  <div class="container col-md-4 vh-100">
+    <div class="row justify-content-center h-100 mx-1">
+      <div class="card rounded my-auto shadow-lg">
+        <div class="card-body p-4">
+          <div class="text-center pb-2">
+            <h2 class="text"><span>Big</span>Market</h2>
+          </div>
+          <div class="text-start">
+            <p class="h4 fw-bold">Sign in</p>
+            <span style="color: lightslategray ;font-size: 15px;">to continue to Outlook</span>
+          </div>
+          <div class="text-center mb-2">
+            <span class="text-danger">{{errorMsg}}</span>
+          </div>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="form-group mb-3">
+              <input type="email" id="email" (keyup)="clearErrorMsg()" placeholder="Enter Email Id" name="email" class="form-control"  formControlName="emailAddress"/>
+              <div *ngIf='control.emailAddress.touched && control.emailAddress.invalid'>
+                <span class="text-danger" *ngIf="control.emailAddress.errors?.required">Email address is required</span>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <input type="password" id="password" (keyup)="clearErrorMsg()" placeholder="Enter Password" name="password" class="form-control"  formControlName="password"/>
+              <div *ngIf='control.password.touched && control.password.invalid'>
+                <span class="text-danger" *ngIf="control.password.errors?.required">password is required</span>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <a *ngIf="control.emailAddress.touched" class="text-danger" routerLink=""> forget password</a>
+            </div>
+            <div class="form-group d-flex justify-content-between mb-2 mt-4 pt-2">
+              <button type="submit" class="btn btn-primary w-25" > <a href="https://onewaveapi.techwave.net/login/azure"></a>
+                <span class="spinner-border spinner-border-sm" *ngIf="spinner" role="status" aria-hidden="true"></span>
+                Login
+              </button>
+              <span>Create a new <a class="text-danger fw-bold" routerLink="/auth/registration">Registration?</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
